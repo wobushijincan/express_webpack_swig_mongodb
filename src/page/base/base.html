@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}My Site{% endblock %}</title>
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <!--webpack_style_placeholder-->
+  {% block style %}{%endblock%}
+</head>
+<body>
+  <header>Express && webpack && pages</header>
+  {% block content %}{% endblock %}
+  {% if env == 'dev' %}
+    <script src="/reload/reload.js"></script>
+  {% endif %}
+
+  <!--webpack_script_placeholder-->
+  {% block script %}{%endblock%}
+  <footer>
+    <hr/>
+  </footer>
+</body>
+</html>

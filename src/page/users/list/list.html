@@ -1,0 +1,24 @@
+{% extends '../../base/base.html' %}
+
+{% block title %}My Page{% endblock %}
+
+{% block style %}<!--webpack_style_placeholder-->{%endblock%}
+
+{% block head %}
+  {% parent %}
+{% endblock %}
+
+{% block content %}
+  <ul>
+    <li>爱笑的姑娘，总是比别人更容易长眼纹，干纹，细纹，鱼尾纹。
+    <li>明明可以靠脸吃饭，你却要靠才华，这就是你跟明明的差距</li>
+    <li>一场说走就走的旅行，回来等着你的就是一段吃土的日子</li>
+    <li>上帝给了你丑的外表跟低的智商，就是怕你不协调</li>
+  </ul>
+
+  <button id="getMovies">jquery获取电影列表</button>
+
+  <a href="/users/info">link user info</a>
+{% endblock %}
+
+{% block script %}<!--webpack_script_placeholder-->{%endblock%}
